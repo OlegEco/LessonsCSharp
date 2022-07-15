@@ -6,22 +6,84 @@ namespace LessonsCSharp
     {
         static void Main(string[] args)
         {
-            string Name; //Огологуэмо змінну Нейм
-            Console.WriteLine("Hello, Who are u bitches?");
-            Name = Console.ReadLine(); // Зчитуэмо інформацію від вводу користувача
-
-            Console.WriteLine("How old are u MILFS?");
-            int Age = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Nice to meet u " + Name);
-            Console.WriteLine($"Nice to fuck {Name}");
-            Console.WriteLine("Nice to bitch {1} {0}", Name, Age); //string , 0 , 1 ,2 ,......,
-
-            string IHaveNum = Convert.ToString(Age); // Явно перетворюэмо
-            string IHaveNum2 = Age.ToString(); // Не Явно перетворюэмо
+            bool Mar = true;
+            if (Mar = true)
+                Mar = false;
+            else Mar = true;
 
 
-            Console.ReadKey();  //Pause;
+            const int Age = 22; // Константу не можливо перевизначити в подальшому ( так званий захист від уйобків)
+            string Name = "Oleg";
+            char LevelAdmin = 'A';
+
+            double Money = 223.23455; // or biggest is float  or more biggest is decimal
+
+            byte MoneyPayPhonePerMonth = 254;
+
+            // типЗмінної ІмяЗмінної
+
+
+
+            //==bool: хранит значение true или false(логические литералы).Представлен системным типом System.Boolean
+            bool alive = true;
+            bool isDead = false;
+
+            //==byte: хранит целое число от 0 до 255 и занимает 1 байт.Представлен системным типом System.Byte
+            byte bit1 = 1;
+            byte bit2 = 102;
+
+            //== sbyte: хранит целое число от -128 до 127 и занимает 1 байт.Представлен системным типом System.SByte
+            sbyte bit3 = -101;
+            sbyte bit4 = 102;
+
+            // == short: хранит целое число от -32768 до 32767 и занимает 2 байта.Представлен системным типом System.Int16
+            short n1 = 1;
+            short n2 = 102;
+
+            // ==  ushort: хранит целое число от 0 до 65535 и занимает 2 байта.Представлен системным типом System.UInt16
+            ushort n3 = 1;
+            ushort n4 = 102;
+
+            // == int: хранит целое число от -2147483648 до 2147483647 и занимает 4 байта.Представлен системным типом System.Int32.Все целочисленные литералы по умолчанию представляют значения типа int:
+            int a = 10;
+            int b = 0b101;  // бинарная форма b =5
+            int c = 0xFF;   // шестнадцатеричная форма c = 255
+
+            // uint: хранит целое число от 0 до 4294967295 и занимает 4 байта.Представлен системным типом System.UInt32
+            uint d = 10;
+            uint e = 0b101;
+            uint f = 0xFF;
+
+            //   long: хранит целое число от –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт.Представлен системным типом System.Int64
+            long g = -10;
+            long h = 0b101;
+            long i = 0xFF;
+
+            //  ulong: хранит целое число от 0 до 18 446 744 073 709 551 615 и занимает 8 байт.Представлен системным типом System.UInt64
+            ulong j = 10;
+            ulong k = 0b101;
+            ulong l = 0xFF;
+
+            //  float: хранит число с плавающей точкой от -3.4 * 1038 до 3.4 * 1038 и занимает 4 байта.Представлен системным типом System.Single
+
+            //double: хранит число с плавающей точкой от ±5.0 * 10 - 324 до ±1.7 * 10308 и занимает 8 байта.Представлен системным типом System.Double
+
+            //decimal: хранит десятичное дробное число. Если употребляется без десятичной запятой, имеет значение от ±1.0 * 10 - 28 до ±7.9228 * 1028, может хранить 28 знаков после запятой и занимает 16 байт.Представлен системным типом System.Decimal
+
+            //char: хранит одиночный символ в кодировке Unicode и занимает 2 байта.Представлен системным типом System.Char.Этому типу соответствуют символьные литералы:
+            char m = 'A';
+            char n = '\x5A';
+            char o = '\u0420';
+
+            //   string: хранит набор символов Unicode. Представлен системным типом System.String.Этому типу соответствуют строковые литералы.
+            string hello = "Hello";
+            string word = "world";
+
+            // object: может хранить значение любого типа данных и занимает 4 байта на 32 - разрядной платформе и 8 байт на 64 - разрядной платформе.Представлен системным типом System.Object, который является базовым для всех других типов и классов.NET.
+            object p = 22;
+            object q = 3.14;
+            object r = "hello code";
         }
+    }
     }
 }
